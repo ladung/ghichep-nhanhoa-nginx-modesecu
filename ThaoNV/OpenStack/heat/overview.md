@@ -250,3 +250,17 @@ Tạo stack
 Kiểm tra server list
 
 `openstack server list`
+
+### Cài đặt heat dashboard
+
+- Cài đặt heat dashboard
+
+`yum install openstack-heat-ui -y`
+
+- Restart lại httpd
+
+`systemctl restart httpd`
+
+- Truy cập horizon để kiểm tra
+
+<img src="https://i.imgur.com/gRvF0cX.png">
