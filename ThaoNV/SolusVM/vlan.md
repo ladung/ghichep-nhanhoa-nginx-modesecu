@@ -81,7 +81,7 @@ Cuối cùng đừng quên xóa cấu hình có sẵn của `br0`
 
 Tiếp đến, ta sẽ tiến hành tắt toàn bộ máy ảo để cập nhật lại config. Sau khi máy ảo được tắt, ta sẽ update config trong tab `Dashboard\Virtual Servers\server-name\Custom Config`
 
-Tích vào `Enable Custom Config`. Sau đó copy paste custom config. Sửa block interfaces
+Tích vào `Enable Custom Config`. Sau đó copy paste custom config (lưu ý copy toàn bộ config). Sửa block interfaces
 
 ```
 <interface type='bridge'>
@@ -99,3 +99,4 @@ Sau khi thay xong, tiến hành save lại.
 Tiếp tục, ta sẽ chỉnh config trên sw từ mode access về trunk, allow các vlan mong muốn và restart lại network của node kvm rồi kiểm tra lại.
 
 Nếu các bridge vlan đã up hết, ta sẽ bật lại các máy ảo sau đó kiểm tra.
+
