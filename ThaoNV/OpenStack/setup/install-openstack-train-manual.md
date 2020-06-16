@@ -1463,6 +1463,10 @@ target_helper = lioadm
 EOF
 ```
 
+- Sync db
+
+`su -s /bin/sh -c "cinder-manage db sync" cinder`
+
 - Restart nova-api 
 
 `systemctl restart openstack-nova-api.service`
